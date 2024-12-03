@@ -14,7 +14,7 @@ namespace iiAdditions
     public class PluginManager
     {
         // Add button to plugins category
-        // TODO: "Add categories" function
+        // TODO: "Add category" function
         public static void AddFunction(string text = "Unnamed function", bool isToggleable = false, Action method = null, string toolTip = "This plugin doesn't have a tooltip :/", Action enableMethod = null, Action disableMethod = null) => Plugin.AddButton(text, isToggleable, method, toolTip, enableMethod, disableMethod);
 
         // Ez access to guns

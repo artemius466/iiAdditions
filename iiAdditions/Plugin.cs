@@ -21,7 +21,7 @@ using System;
 
 namespace iiAdditions
 {
-    [BepInDependency("org.iidk.gorillatag.iimenu", "5.0.0")]
+    [BepInDependency("org.iidk.gorillatag.iimenu", "5.1.0")]
     [BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
     public class Plugin : BaseUnityPlugin
     {
@@ -33,14 +33,14 @@ namespace iiAdditions
 
         private bool LoadedCategory;
         internal static BaseUnityPlugin instance;
-        private const int lastButtonArray = 31;
+        private static int lastButtonArray;
 
         private void Awake()
         {
             if (instance == null)
             {
                 instance = this;
-                Events.instance = new Events();
+                Events.Events.instance = new Events.Events();
             }
         }
 
@@ -58,12 +58,13 @@ namespace iiAdditions
         
         private void Init()
         {
+            lastButtonArray = buttons.Length+1;
             ButtonInfo sigma = new ButtonInfo { buttonText = "Plugins", method = EnablePluginsCategory, isTogglable = false, toolTip = "Opens the plugins" };
             buttons[0] = buttons[0].AddItem<ButtonInfo>(sigma).ToArray();
 
             buttons = buttons.AddItem<ButtonInfo[]>(plugins.ToArray()).ToArray();
 
-            Events.instance.TriggerMenuInitialized();
+            Events.Events.instance.TriggerMenuInitialized();
 
             LoadedCategory = true;
         }

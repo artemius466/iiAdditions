@@ -6,7 +6,7 @@ using System.Text;
  * Events, so plugins will know, when menu is loaded and etc
 */
 
-namespace iiAdditions
+namespace iiAdditions.Events
 {
     public class Events
     {
