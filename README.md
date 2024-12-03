@@ -9,7 +9,7 @@ Mod, that adds a plugin support for [ii's Stupid Menu](https://github.com/iiDk-t
  - [ii's Stupid Menu](https://github.com/iiDk-the-actual/iis.Stupid.Menu)
 ### Installation
 
- - Go to releases page and download latest dll file
+ - Go to [releases page](https://github.com/artemius466/iiAdditions/releases/latest) and download latest dll file
  - Place downloaded file into your "Plugins" folder
  - Done, now you can download plugins!
 
