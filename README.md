@@ -1,7 +1,7 @@
 
 # iiAdditions
 
-Mod, that adds a plugin support for [ii's Stupid Menu](https://github.com/iiDk-the-actual/iis.Stupid.Menu)
+A mod that adds a plugin support for [ii's Stupid Menu](https://github.com/iiDk-the-actual/iis.Stupid.Menu)
 
 ## Installation
 
