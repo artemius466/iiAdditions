@@ -3,8 +3,17 @@
 
 Mod, that adds a plugin support for [ii's Stupid Menu](https://github.com/iiDk-the-actual/iis.Stupid.Menu)
 
+## Installation
 
-## Usage
+### Dependencies
+ - [ii's Stupid Menu](https://github.com/iiDk-the-actual/iis.Stupid.Menu)
+### Installation
+
+ - Go to releases page and download latest dll file
+ - Place downloaded file into your "Plugins" folder
+ - Done, now you can download plugins!
+
+## How to create plugins
 
 Here is an example on how to add function into plugins category:
 
